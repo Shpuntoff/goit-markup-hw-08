@@ -16,17 +16,31 @@ img {
 }
 
 .container {
-    width: 1200px;
+    max-width: 480px;
     padding: 0px 15px;
     margin: 0 auto 0 auto;
+    @include tablet {
+        max-width: 768px;
+        }
+    @include desktop {
+        max-width: 1200px;
+        }
+
 }
 .section {
-    padding: 94px 0px;
+    padding: 60px 0px;
+    @include desktop {
+        padding: 94px 0px;
+    }
 }
 .title {
-    margin-bottom: 50px;
-    @include font (36px, 1.17, null);
+    margin-bottom: 30px;
+    @include font (18px, 1.18, null);
     text-align: center;
+    @include desktop {
+        margin-bottom: 50px;
+        @include font (36px, 1.18, null);
+    }
 }
 .team {
     background-color: var(--secondary-bg-color);

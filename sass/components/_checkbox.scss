@@ -1,19 +1,28 @@
 .modal-checkbox {
     display: flex;
-    align-items: center;
-    margin: 0px 0px 30px 12px;
+    margin: 0px 0px 30px 0px;
     &__input {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         position: absolute;
     }
+    &__text {
+        display: block;
+        @include desktop {
+            @include font (14px, 1.71, null)
+        }
+        
+    }
     &__link {
         margin-left: 5px;
     }
     &__icon {
-        margin-right: 8.38px;
+        margin-right: 8px;
         @include size (16px, 15px);
+        @include desktop {
+            margin-right: 8.38px;
+        }
         &--eneble {
             display: none;
         }
@@ -29,5 +38,8 @@
             @include center;
             border-radius: 2px;
         }
+    }
+    @include desktop {
+        margin: 0px 0px 30px 12px;
     }
 }

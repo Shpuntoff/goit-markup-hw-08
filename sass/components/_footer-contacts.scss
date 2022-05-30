@@ -1,6 +1,16 @@
 /* -- footer-contacts block -- */
 .footer-contacts {
-    margin-right: 70px;
+    text-align: center;
+    margin-bottom: 60px;
+    @include tablet {
+        margin-left: 61px;
+        margin-right: 165px;
+    }
+    @include desktop {
+        margin: 0 70px 0 0;
+        text-align: left;
+    }
+    
     &__adress {
         margin-top: 20px;
     }

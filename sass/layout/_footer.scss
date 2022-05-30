@@ -1,11 +1,18 @@
     /* ------------ footer ------------- */
 
 footer {
-    padding: 60px 0px;
+    padding: 60px 0;
     background-color: var(--footer-color);
 }
 .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+    }
 }

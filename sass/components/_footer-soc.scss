@@ -1,16 +1,25 @@
 /* -- footer-soc -- */
 
 .footer-soc {
-    margin-right: 93px;
+    margin-bottom: 60px;
+    
+
     &__title{
-        display: flex;
+        margin-right: auto;
+        margin-right: auto;
         @include font (14px, 1.43, 0.03em);
-        text-transform: uppercase;  
+        text-align: center;
+        text-transform: uppercase; 
+        
         color: var(--main-white-text);
         margin-bottom: 20px;
+        @include desktop {
+            text-align: left;
+        }
     }
     &__list {
         display: flex;
+        
         @include center;
     }
     &__item {

@@ -2,7 +2,7 @@
 
 .members-soc {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     @include center;
     &__item {
         @include size (44px, 44px);
