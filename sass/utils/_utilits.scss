@@ -1,0 +1,44 @@
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.hide {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.flex {
+    display: flex;
+}
+
+  /* Elements with Accent color */
+.accent,
+.current {
+    color: var(--accent-color);
+}
+.wrap-description {
+    position: relative;
+    overflow: hidden;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin size($width, $hight) {
+    width: $width;
+    height: $hight;
+}
+@mixin font($font-size, $line-heigh, $letter-spacing) {
+    font-size: $font-size;
+    line-height: $line-heigh;
+    letter-spacing: $letter-spacing; 
+}
+@mixin center {
+    align-items: center;
+    justify-content: center;
+}

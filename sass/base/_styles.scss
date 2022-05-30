@@ -1,0 +1,36 @@
+body {
+    position: relative;
+    background-color: var(--main-white-text);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    @include font (14px, null, 0.03em);
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto 0 auto;
+}
+.section {
+    padding: 94px 0px;
+}
+.title {
+    margin-bottom: 50px;
+    @include font (36px, 1.17, null);
+    text-align: center;
+}
+.team {
+    background-color: var(--secondary-bg-color);
+}
+.header {
+    border-bottom: 1px solid #ECECEC;
+}

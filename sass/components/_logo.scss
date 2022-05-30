@@ -1,0 +1,14 @@
+/* ------------logo -----------------*/
+
+.logo {
+    font-family: Raleway, sans-serif;
+    @include font (26px, 1.19, null);
+    color: var(--main-black-text);
+    &--header {
+        margin-right: 93px;
+        padding: 24px 0 25px 0;
+    }
+    &--light {
+        color: var(--main-white-text);
+    }
+}

@@ -1,0 +1,25 @@
+.clients-list {
+    &__item {
+    @include size (170px, 92px);
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
+    &__link {
+        display: flex;
+        @include size (100%, 100%);
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        @include center;
+
+        fill: #AFB1B8;
+        transition: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            border: 1px solid var(--accent-color);
+            fill: var(--accent-color);
+        }
+    }
+}
+

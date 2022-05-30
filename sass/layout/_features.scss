@@ -1,0 +1,27 @@
+/* ---------- features section ---------- */
+.features-list {
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__card {
+        display: flex;
+        @include center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 4px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        @include font (14px, 1.43, null);
+        text-transform: uppercase;
+    }
+    &__description {
+        color: var(--secondary-text-color);
+        line-height: 1.71;
+    }
+}
+
+

@@ -1,0 +1,33 @@
+.modal-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 30px 12px;
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+    &__link {
+        margin-left: 5px;
+    }
+    &__icon {
+        margin-right: 8.38px;
+        @include size (16px, 15px);
+        &--eneble {
+            display: none;
+        }
+        .modal-checkbox__input:checked +&--dislable {
+            display: none;
+        }
+        .modal-checkbox__input:checked +&--dislable +&--eneble {
+            display: block;
+            background-color: var(--accent-color);
+            padding: 4px 2px 3px 3px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include center;
+            border-radius: 2px;
+        }
+    }
+}

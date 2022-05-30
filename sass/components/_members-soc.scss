@@ -1,0 +1,27 @@
+/* ---- members soc block ---- */
+
+.members-soc {
+    display: flex;
+    margin-bottom: 30px;
+    @include center;
+    &__item {
+        @include size (44px, 44px);
+        &:not(:last-child) {
+        margin-right: 10px;
+        }
+    }
+    &__link {
+        display: flex;
+        @include size (100%, 100%);
+        border-radius: 50%;
+        @include center;
+        fill: #AFB1B8;
+        transition-property: background-color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            background-color: var(--accent-color);
+            fill: var(--main-white-text);
+        }
+    }
+}
