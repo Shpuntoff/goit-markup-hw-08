@@ -1,0 +1,66 @@
+.menu-container { 
+    padding: 48px 0 48px 40px;
+}
+
+.menu-nav {
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__link {
+        font-weight: 500;
+        @include font (40px, 1.18, 0.02em);
+        color: #212121;
+        &.current {
+            color: var(--accent-color);
+        }
+    }
+}
+.menu-contacts {
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__link--tel, &__link--mail {
+        font-weight: 500;
+        @include font (34px, 1.17, 0.02em);
+        color: var(--secondary-text-color);
+    }
+    &__link--tel {
+        color: var(--accent-color);
+    }
+    &__link--mail {
+            font-size: 24px;
+        }
+}
+
+.menu-soc {
+    display: flex;
+    &__item {
+        
+    }
+    &__line {
+        margin: 0 10px;
+        width: 22px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+    }
+    &__link {
+        font-weight: 500;
+        @include font (18px, 1.22, 0.02em);
+        color: var(--accent-color);
+    }
+}
+
+.menu-wind__close-bth {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        @include size (40px, 40px);
+        background-color: var(--main-white-text);
+        border: none;
+        @include center;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+            fill: var(--accent-color);
+        }
+}
