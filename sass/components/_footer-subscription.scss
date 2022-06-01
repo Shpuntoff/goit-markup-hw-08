@@ -3,6 +3,7 @@
     
     @include desktop {
         display: flex;
+        justify-content: right;
     }
 }
 .footer-sub {
@@ -11,7 +12,7 @@
         margin-right: auto;
     }
     @include desktop {
-        margin-left: 93px;
+        justify-content: right;
         margin-right: 0;
     }
     &__title {

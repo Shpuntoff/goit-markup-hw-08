@@ -56,14 +56,14 @@
               </svg>
               <span>+38 096 111 11 11</span></a></li>
         </ul>
-        <button type="button" class="menu-bth" data-modal-close>
+        <button type="button" class="menu-bth" data-menu-button>
           <svg width="24" height="16">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="menu-wind">
-        <button type="button" class="menu-wind__close-bth" data-modal-close>
+      <div class="menu-wind is-hidden" data-menu>
+        <button type="button" class="menu-wind__close-bth" data-menu-close>
           <svg width="18.67" height="18.67">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
@@ -82,6 +82,7 @@
                 </li>
               </ul>
           </nav>
+          <div class="menu-wind-bottom">
           <ul class="menu-contacts list">
           <li class="menu-contacts__item">
             <a href="tel:+380961111111" class="menu-contacts__link--tel link">
@@ -108,7 +109,7 @@
             <a href="" class="menu-soc__link link">LinkedIn</a>
           </li>
         </ul>
-
+        </div>
         </div>
         
       </div>
@@ -187,17 +188,22 @@
           <ul class="whatwedo-list flex list">
             <li class="whatwedo-list__item">
               <div class="whatwedo-list__card">
-                <img
+                  <img
+                  srcset="./images/image-optimaze/box1-desk-1x-min.jpg 1x, 
+                  ./images/image-optimaze/box1-desk-2x-min.jpg 2x"
                   src="./images/box1.jpg"
                   alt="набор программного кода на клавиатуре"
                   width="370"
                 />
+                
                 <h3 class="whatwedo-list__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="whatwedo-list__item">
               <div class="whatwedo-list__card">
                 <img
+                srcset="./images/image-optimaze/box2-desk-1x-min.jpg 1x, 
+                  ./images/image-optimaze/box2-desk-2x-min.jpg 2x"
                   src="./images/box2.jpg"
                   alt="рисунок с изображением расположения элементов на экране смартфона"
                   width="370"
@@ -208,6 +214,8 @@
             <li class="whatwedo-list__item">
               <div class="whatwedo-list__card">
                 <img
+                  srcset="./images/image-optimaze/box3-desk-1x-min.jpg 1x, 
+                  ./images/image-optimaze/box3-desk-2x-min.jpg 2x"
                   src="./images/box3.jpg"
                   alt="планшет с изображением цветного шестиугольника"
                   width="370"
@@ -226,7 +234,20 @@
         <h2 class="team title">Наша команда</h2>
         <ul class="members-list list">
           <li class="members-list__card">
-            <img src="./images/team1.jpg" alt="Игорь Демьяненко" width="270" />
+            <picture>
+              <source 
+              srcset="./images/image-optimaze/team1-mobile-1x-min.jpg 1x, 
+              ./images/image-optimaze/team1-mobile-2x-min.jpg 2x" 
+              media="(max-width: 767px)" />
+              <source srcset="./images/image-optimaze/team1-tab-1x-min.jpg 1x, 
+              ./images/image-optimaze/team1-tab-2x-min.jpg 2x" 
+              media="(max-width: 1199px)" />
+              <source srcset="./images/image-optimaze/team1-desk-1x-min.jpg 1x, 
+              ./images/image-optimaze/team1-desk-2x-min.jpg 2x" 
+              media="(min-width: 1200px)" />
+            <img
+            src="./images/team1.jpg" alt="Игорь Демьяненко" width="270" />
+            </picture>
             <h3 class="members-list__title">Игорь Демьяненко</h3>
             <p class="members-list__description">Product Designer</p>
             <ul class="members-soc list">
@@ -257,7 +278,20 @@
             </ul>
           </li>
           <li class="members-list__card">
-            <img src="./images/team2.jpg" alt="Ольга Репина" width="270" />
+            <picture>
+              <source 
+              srcset="./images/image-optimaze/team2-mobile-1x-min.jpg 1x, 
+              ./images/image-optimaze/team2-mobile-2x-min.jpg 2x" 
+              media="(max-width: 767px)" />
+              <source srcset="./images/image-optimaze/team2-tab-1x-min.jpg 1x, 
+              ./images/image-optimaze/team2-tab-2x-min.jpg 2x" 
+              media="(max-width: 1199px)" />
+              <source srcset="./images/image-optimaze/team2-desk-1x-min.jpg 1x, 
+              ./images/image-optimaze/team2-desk-2x-min.jpg 2x" 
+              media="(min-width: 1200px)" />
+            <img src="./images/team2.jpg" 
+            alt="Ольга Репина" width="270" />
+            </picture>
             <h3 class="members-list__title">Ольга Репина</h3>
             <p class="members-list__description">Frontend Developer</p>
             <ul class="members-soc list">
@@ -288,7 +322,20 @@
             </ul>
           </li>
           <li class="members-list__card">
-            <img src="./images/team3.jpg" alt="Николай Тарасов" width="270" />
+            <picture>
+              <source 
+              srcset="./images/image-optimaze/team3-mobile-1x-min.jpg 1x, 
+              ./images/image-optimaze/team3-mobile-2x-min.jpg 2x" 
+              media="(max-width: 767px)" />
+              <source srcset="./images/image-optimaze/team3-tab-1x-min.jpg 1x, 
+              ./images/image-optimaze/team3-tab-2x-min.jpg 2x" 
+              media="(max-width: 1199px)" />
+              <source srcset="./images/image-optimaze/team3-desk-1x-min.jpg 1x, 
+              ./images/image-optimaze/team3-desk-2x-min.jpg 2x" 
+              media="(min-width: 1200px)" />
+            <img src="./images/team3.jpg" 
+            alt="Николай Тарасов" width="270" />
+            </picture>
             <h3 class="members-list__title">Николай Тарасов</h3>
             <p class="members-list__description">Marketing</p>
             <ul class="members-soc list">
@@ -319,7 +366,20 @@
             </ul>
           </li>
           <li class="members-list__card">
-            <img src="./images/team4.jpg" alt="Михаил Ермаков" width="270" />
+            <picture>
+              <source 
+              srcset="./images/image-optimaze/team4-mobile-1x-min.jpg 1x, 
+              ./images/image-optimaze/team4-mobile-2x-min.jpg 2x" 
+              media="(max-width: 767px)" />
+              <source srcset="./images/image-optimaze/team4-tab-1x-min.jpg 1x, 
+              ./images/image-optimaze/team4-tab-2x-min.jpg 2x" 
+              media="(max-width: 1199px)" />
+              <source srcset="./images/image-optimaze/team4-desk-1x-min.jpg 1x, 
+              ./images/image-optimaze/team4-desk-2x-min.jpg 2x" 
+              media="(min-width: 1200px)" />
+            <img src="./images/team4.jpg" 
+            alt="Михаил Ермаков" width="270" />
+            </picture>
             <h3 class="members-list__title">Михаил Ермаков</h3>
             <p class="members-list__description">UI Designer</p>
             <ul class="members-soc list">
@@ -541,7 +601,8 @@
           </div>
         </div>
     </footer>
-
+    
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

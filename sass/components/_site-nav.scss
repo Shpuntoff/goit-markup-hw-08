@@ -56,4 +56,7 @@
         &:hover {
             fill: var(--accent-color);
         }
+        @include tablet {
+            display: none;
+        }
 }

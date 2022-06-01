@@ -2,12 +2,18 @@
 
 .logo {
     font-family: Raleway, sans-serif;
-    @include font (26px, 1.19, null);
+    @include font (24px, 1.17, null);
     color: var(--main-black-text);
+    @include desktop {
+        @include font (26px, 1.19, null);
+    }
     &--header {
-        margin-right: 93px;
         padding: 16px 0;
         @include tablet {
+            padding: 26px 0;
+            margin-right: 88px;
+        }
+        @include desktop {
             margin-right: 93px;
             padding: 24px 0 25px 0;
         }

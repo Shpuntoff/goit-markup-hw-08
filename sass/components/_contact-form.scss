@@ -25,7 +25,9 @@
         &--comment::placeholder {
             color: rgba(117, 117, 117, 0.5);
             @include font (14px, 1.25, 0.01em);
+        
         }
+        
         &:hover, &:focus {
             border-color: var(--accent-color);
         }
